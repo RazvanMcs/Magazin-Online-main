@@ -1,0 +1,33 @@
+@import '../partials/generalCss';
+@media (max-width: 480px) {
+  .container {
+    .subContainer {
+      display: flex;
+      flex-direction: column;
+      .leftSide {
+        width: 400px;
+        height: 150px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        background-position: center;
+        background-color: rgba(38, 5, 77, 0.5);
+        border-bottom: 1px solid rgb(180, 174, 174);
+      }
+      .rightSide {
+        justify-content: space-evenly;
+        img {
+          width: 80px;
+          height: 80px;
+        }
+        padding-bottom: 20px;
+        width: 400px;
+        height: 531px;
+
+        ul {
+          width: 200px;
+        }
+      }
+    }
+  }
+}

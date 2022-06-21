@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/productsOverviewStyle.css" />
+    <title>Products</title>
+</head>
+
+<body>
+    <!-- NAVIGATIE  -->
+    <header>
+        <nav>
+            <div class="navigatie" id="backUp">
+                <a href="landingPage.html"><img src="../images/wheelSignUp.png" alt="logo" />
+                    <p>The Car Shop</p>
+                </a>
+                <div class="topRight">
+                    <a class="iconNav" href="#"><img src="../images/cart.png" alt="Cart" />
+                        <p>Your Cart</p>
+                    </a>
+                    <a class="iconNav" href="index.html"><img src="../images/register.png" alt="register" />
+                        <p>Register</p>
+                    </a>
+                    <a class="iconNav" href="signIn.html"><img src="../images/login.png" alt="login" />
+                        <p>Login</p>
+                    </a>
+                </div>
+                <div class="topRightMenu">
+                    <div class="dropDownMenu">
+                        <ul>
+                            <li>
+                                <img src="/images/icons8-menu-48.png" alt="menu">
+                                <ul>
+                                    <li><a class="iconNav" href="#">
+                                        <p>Your Cart</p>
+                                    </a></li>
+                                    <li><a class="iconNav" href="index.html">
+                                        <p>Register</p>
+                                    </a></li>
+                                    <li>
+                                        <a class="iconNav" href="signIn.html">
+                                            <p>Login</p> 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="dropDown">
+                <ul>
+                    <li class="all"><a href="productsOverview.html">SEE ALL</a></li>
+                    <li>
+                        FORD
+                        <ul>
+                            <li><a href="productsOverview.html">Mustang</a></li>
+                            <li><a href="productsOverview.html">Mondeo</a></li>
+                            <li>
+                                <a href="productsOverview.html">Ranger</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        MAZDA
+                        <ul>
+                            <li><a href="productsOverview.html">6</a></li>
+                            <li><a href="productsOverview.html">BT-50</a></li>
+                            <li><a href="productsOverview.html">CX-5</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        DACIA
+                        <ul>
+                            <li><a href="productsOverview.html">Logan</a></li>
+                            <li><a href="productsOverview.html">StepWay</a></li>
+                            <li>
+                                <a href="productsOverview.html">Duster</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- SEARCH BAR -->
+    <div class="search">
+        <input type="search" name="search" placeholder="Enter your searches" />
+        <a class="searchBtn" href="#">Search</a>
+    </div>
+    <!-- BACK UP BUTTON  -->
+    <div class="backUp">
+        <a href="#backUp"><img src="../images/up.png" alt="upArrow" title="Go up" /></a>
+    </div>
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <!-- LEFT SIDE -->
+        <aside class="left">
+            <form action="/productsOverview.html">
+                <ul>
+                    <li class="filter"><b>Your Filters:</b></li>
+                    <li class="criteriu">
+                        <b>Brand</b>
+                        <ul>
+                            <li class="numeCriteriu">
+                                <input type="checkbox" name="brand" id="Ford" value="ford" /><label for="Ford">Ford</label>
+                            </li>
+                            <li class="numeCriteriu">
+                                <input type="checkbox" name="brand" id="Mazda" value="mazda" /><label for="Mazda">Mazda</label>
+                            </li>
+                            <li class="numeCriteriu">
+                                <input type="checkbox" name="brand" id="Dacia" value="dacia" /><label for="Dacia">Dacia</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="criteriu">
+                        <b>Model</b>
+                        <ul>
+                            <li class="forFord">
+                                <ul>
+                                    <li class="model">
+                                        <input type="checkbox" name="model" id="mustang" value="mustang" /><label for="mustang">Mustang</label>
+                                    </li>
+                                    <li class="model">
+                                        <input type="checkbox" name="model" id="mondeo" value="mondeo" /><label for="mondeo">Mondeo</label>
+                                    </li>
+                                    <li class="model">
+                                        <input type="checkbox" name="model" id="ranger" value="Ranger" /><label for="ranger">Ranger</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="forMazda">
+                                <ul>
+                                    <li class="model">
+                                        <input type="checkbox" name="model" id="sase" value="sase" /><label for="sase">6</label>
+                                    </li>
+                                    <li class="model">
+                                        <input type="checkbox" name="model" id="bt50" value="BT50" /><label for="bt50">BT-50</label>
+                                    </li>
+                                    <li class="model">
+                                        <input type="checkbox" name="model" id="cx5" value="cx5" /><label for="cx5">CX-5</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="forDacia">
+                                <ul>
+                                    <li class="model">
+                                        <input type="checkbox" name="model" id="logan" value="logan" /><label for="logan">Logan</label>
+                                    </li>
+                                    <li class="model">
+                                        <input type="checkbox" name="model" id="stepWay" value="stepWay" /><label for="stepWay">StepWay</label>
+                                    </li>
+                                    <li class="model">
+                                        <input type="checkbox" name="model" id="duster" value="duster" /><label for="duster">Duster</label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="criteriu"><b>Price Range</b></li>
+                </ul>
+            </form>
+        </aside>
+        <!-- RIGHT SIDE -->
+        <aside class="right">
+            <h1>
+                Browsing products for (type of search) - (number of searches) results
+            </h1>
+
+            <!-- FILTERS -->
+
+            <label for="sort">Sort by:</label>
+            <select id="sort" name="sortBy">
+          <option value="highToLow">High To Low</option>
+          <option value="lowToHigh">Low to High</option>
+        </select>
+
+            <label for="showNitems">Results per page</label>
+            <select id="showNitems" name="numberOfItems">
+          <option value="25">25</option>
+          <option value="15">15</option>
+          <option value="10">10</option>
+        </select>
+
+            <!-- PRODUCT LIST -->
+
+            <!-- <div class="gridProductPage">
+                <div>
+                    <img src="../images/carPic.jpg" alt="carPic" />
+                    <p class="text">Some text</p>
+                    <p class="price">The Price</p>
+                    <div class="hoverItems">
+                        <a href="/productPage.html">VIEW DETAILS</a>
+                        <a href="# ">ADD TO CHART</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="../images/carPic.jpg" alt="carPic" />
+                    <p class="text">Some text</p>
+                    <p class="price">The Price</p>
+                    <div class="hoverItems">
+                        <a href="/productPage.html">VIEW DETAILS</a>
+                        <a href="# ">ADD TO CHART</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="../images/carPic.jpg" alt="carPic" />
+                    <p class="text">Some text</p>
+                    <p class="price">The Price</p>
+                    <div class="hoverItems">
+                        <a href="/productPage.html">VIEW DETAILS</a>
+                        <a href="#">ADD TO CHART</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="../images/carPic.jpg" alt="carPic" />
+                    <p class="text">Some text</p>
+                    <p class="price">The Price</p>
+                    <div class="hoverItems">
+                        <a href="/productPage.html">VIEW DETAILS</a>
+                        <a href="#">ADD TO CHART</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="../images/carPic.jpg" alt="carPic" />
+                    <p class="text">Some text</p>
+                    <p class="price">The Price</p>
+                    <div class="hoverItems">
+                        <a href="/productPage.html">VIEW DETAILS</a>
+                        <a href="#">ADD TO CHART</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="../images/carPic.jpg" alt="carPic" />
+                    <p class="text">Some text</p>
+                    <p class="price">The Price</p>
+                    <div class="hoverItems">
+                        <a href="/productPage.html">VIEW DETAILS</a>
+                        <a href="#">ADD TO CHART</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="../images/carPic.jpg" alt="carPic" />
+                    <p class="text">Some text</p>
+                    <p class="price">The Price</p>
+                    <div class="hoverItems">
+                        <a href="/productPage.html">VIEW DETAILS</a>
+                        <a href="#">ADD TO CHART</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="../images/carPic.jpg" alt="carPic" />
+                    <p class="text">Some text</p>
+                    <p class="price">The Price</p>
+                    <div class="hoverItems">
+                        <a href="/productPage.html">VIEW DETAILS</a>
+                        <a href="#">ADD TO CHART</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="../images/carPic.jpg" alt="carPic" />
+                    <p class="text">Some text</p>
+                    <p class="price">The Price</p>
+                    <div class="hoverItems">
+                        <a href="/productPage.html">VIEW DETAILS</a>
+                        <a href="#">ADD TO CHART</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="../images/carPic.jpg" alt="carPic" />
+                    <p class="text">Some text</p>
+                    <p class="price">The Price</p>
+                    <div class="hoverItems">
+                        <a href="/productPage.html">VIEW DETAILS</a>
+                        <a href="#">ADD TO CHART</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="../images/carPic.jpg" alt="carPic" />
+                    <p class="text">Some text</p>
+                    <p class="price">The Price</p>
+                    <div class="hoverItems">
+                        <a href="/productPage.html">VIEW DETAILS</a>
+                        <a href="#">ADD TO CHART</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="../images/carPic.jpg" alt="carPic" />
+                    <p class="text">Some text</p>
+                    <p class="price">The Price</p>
+                    <div class="hoverItems">
+                        <a href="/productPage.html">VIEW DETAILS</a>
+                        <a href="#">ADD TO CHART</a>
+                    </div>
+                </div>
+            </div> -->
+        </aside>
+    </div>
+    <div class="pagination">
+        <a href="# ">&laquo;</a>
+        <a href="# ">1</a>
+        <a href="# ">2</a>
+        <a href="# ">3</a>
+        <a href="# ">4</a>
+        <a href="# ">5</a>
+        <a href="# ">6</a>
+        <a href="# ">&raquo;</a>
+    </div>
+
+    <!-- FOOTER  -->
+
+    <footer>
+        <ul>
+            <li class="footTitle">
+                <a href="landingPage.html ">
+                    <img src="../images/wheelSignUp.png " alt="logo " /></a>
+            </li>
+            <li class="footTitle">© 2022 Macsimiuc Razvan</li>
+        </ul>
+
+        <ul>
+            <li class="footTitle">About</li>
+            <li><a href="# ">Team</a></li>
+            <li><a href="# ">Jobs</a></li>
+            <li><a href="# ">Blog</a></li>
+        </ul>
+        <ul>
+            <li class="footTitle">Help</li>
+            <li><a href="# ">FAQ</a></li>
+            <li><a href="# ">Security</a></li>
+            <li><a href="# ">Terms of Service</a></li>
+        </ul>
+        <ul>
+            <li class="footTitle">Connect</li>
+            <li><a href="# ">Facebook</a></li>
+            <li><a href="# ">Youtube</a></li>
+            <li><a href="# ">Instagram</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

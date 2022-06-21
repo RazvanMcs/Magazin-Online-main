@@ -1,0 +1,35 @@
+@import 'colors';
+@import 'fontSize';
+footer {
+    background-color: $baseColor;
+    // height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    ul {
+        margin:10px;
+        // &:first-child {
+            // align-items: flex-start;
+        // }
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+    li {
+        margin-bottom: 5px;
+    }
+    .footTitle {
+        color: $shadow;
+        font-weight: bold;
+    }
+}
+@media (max-width:900px){
+    footer{
+        justify-content: space-around;
+        ul{
+            min-width: 100px;
+        }
+    }
+    }

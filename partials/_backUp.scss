@@ -1,0 +1,13 @@
+.backUp {
+    position: sticky;
+    top: 400px;
+    margin-left: 10px;
+    height: 0;
+    img {
+        width: 40px;
+        &:hover {
+            border-radius: 30px;
+            background-color: white;
+        }
+    }
+}

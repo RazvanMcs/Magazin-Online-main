@@ -1,0 +1,187 @@
+@import '../partials/generalCss';
+@import '../partials/navigatieHeader';
+@import '../partials/carusel';
+@import '../partials/footer';
+@import '../partials/mainSearch';
+@import '../partials/backUp';
+@import '../partials/textCarousel';
+@import '../partials/fontSize';
+@import '../partials/colors';
+.heroImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $darkShadow;
+    background-image: url('../images/heroImgLanding.jpg');
+    background-size: cover;
+    background-color: $darkShadow;
+    background-blend-mode: overlay;
+    height: 500px;
+    padding: 5px;
+    .learn {
+        background-color: $white;
+        font-size: $h2;
+        color: $black;
+        border: 1px solid $white;
+        padding: 10px 20px;
+    }
+    .discover {
+        font-size: $h1;
+        color: $black;
+        margin-bottom: 20px;
+        letter-spacing: 5px;
+        background-color: $baseColor;
+        width: 100%;
+        text-align: center;
+    }
+    .container {
+        width: 800px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+section {
+    .carousel {
+        margin: 10px 100px;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .arrow {
+            img {
+                height: 40px;
+                width: 40px;
+            }
+            &.a:hover {
+                transform: translate(-3px, 0);
+            }
+            &.b:hover {
+                transform: translate(3px, 0);
+            }
+        }
+        .slide1 {
+            border: 1px solid $black;
+            box-shadow: 6px 5px $shadow;
+            margin-right: 40px;
+            margin-left: 40px;
+            padding-bottom: 30px;
+            img {
+                width: 400px;
+                height: 300px;
+            }
+            p {
+                font-size: $h3;
+                margin: 10px 20px;
+            }
+            a {
+                margin: 10px 20px;
+                padding: 5px 40px;
+                border: 2px solid $black;
+                letter-spacing: 2px;
+            }
+        }
+        .slide2 {
+            border: 1px solid $black;
+            box-shadow: 6px 5px $shadow;
+            margin-right: 40px;
+            text-align: center;
+            padding-bottom: 30px;
+            img {
+                width: 200px;
+                height: 300px;
+            }
+            p {
+                font-size: $h3;
+                margin: 10px 20px;
+            }
+            a {
+                margin: 10px 20px;
+                padding: 5px 30px;
+                border: 2px solid $black;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+section {
+    .heroImage {
+        background-image: url('../images/firstHero.jpg');
+        background-size: cover;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        p {
+            width: 50%;
+            padding-bottom: 30px;
+        }
+        &.product {
+            height: 300px;
+        }
+    }
+}
+
+// .sec {
+//     border-top: 1px solid $black;
+//     background-color: $lightShadow;
+//     .grid {
+//         padding-bottom: 50px;
+//         margin: 0 100px;
+//         display: grid;
+//         gap: 10px;
+//         grid-template-columns: repeat(4, 1fr);
+//         grid-template-rows: repeat(2, 1fr);
+//         place-items: center;
+//         text-align: center;
+//         div {
+//             width: 200px;
+//             padding-bottom: 40px;
+//         }
+//         a {
+//             font-weight: bold;
+//             img {
+//                 width: 200px;
+//             }
+//         }
+//     }
+// }
+
+.clickable {
+    color: $black;
+    &:hover {
+        background-color: $baseColor;
+        color: $white;
+    }
+}
+@media (max-width:900px){
+   section{
+
+  .carousel{
+        margin: 10px 0;
+        .slide1{
+            display: none;
+        }
+        .slide2{
+            margin-right:20px;
+            margin-left: 20px;
+            width: 30%;
+            img{
+                margin: 0;
+                width: 100%;
+                height: 200px;
+            }
+            .clickable{
+                margin:2px;
+                padding: 5px 10px;
+            }
+        }
+     
+    }
+    .heroImage{
+        height: 350px;
+    }
+} } 

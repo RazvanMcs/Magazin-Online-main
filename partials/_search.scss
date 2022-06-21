@@ -1,0 +1,19 @@
+@import 'mainSearch';
+@import 'fontSize';
+@import 'colors';
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 15px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid $baseColor;
+    input {
+        margin-top: 0px;
+    }
+    .searchBtn {
+        margin-left: 5px;
+        background-color: $white;
+        border: 1px solid $baseColor;
+    }
+}

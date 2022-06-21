@@ -1,0 +1,194 @@
+@import 'colors';
+@import 'fontSize';
+
+.navigatie {
+    padding: 20px 100px;
+    background-color: $baseColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     :first-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .topRightMenu{
+        display: none;
+        .dropDownMenu{
+        border-bottom: 1px solid $baseColor;
+        // padding: 10px 150px;
+        position: relative;
+        z-index: 2;
+        ul {
+            
+            padding: 5px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                // padding-top:10px;
+                color: $black;
+                font-weight: bold;
+                letter-spacing: 1px;
+                cursor: pointer;
+                &:hover ul {
+                    height: 120px;
+                    color: $baseColor;
+                }
+                &:hover ul li {
+                    display: block;
+                    width: 130px;
+                    text-align: center;
+                }
+                ul {margin-right: 50px;
+                    border-top: 2px solid $baseColor;
+                    top:45px;
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    padding: 0;
+                    background-color: $white;
+                    height: 0px;
+                    transition: height 0.2s ease-in-out;
+                    li {
+                        background-color: $white;
+                        padding: 10px 70px;
+                        display: none;
+                        &:hover {
+                            background-color: $baseColor;
+                            a {
+                                color: $white;
+                            }
+                        }
+                        a {
+                           
+                            color: $black;
+                            font-weight: bolder;
+                            p{
+                                font-size: 15px;
+                            }
+                            img{
+                                width: 30px;
+                                height: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+    .topRight {
+        display: flex;
+     
+        .iconNav {
+            img {
+                width: 30px;
+                height: 30px;
+            }
+            p {
+                font-size: $h4;
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    a {
+        color: $lightShadow;
+        font-weight: bold;
+        &:not(:first-of-type) {
+            margin-left: 30px;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        p {
+            &:hover {
+                color: $white;
+            }
+            margin-left: 10px;
+            font-size: $h2;
+        }
+    }
+}
+
+.dropDown {
+    border-bottom: 1px solid $baseColor;
+    padding: 10px 150px;
+    position: relative;
+    background-color: $white;
+    ul {
+        .all {
+            a {
+                color: $black;
+            }
+            padding-bottom: 1px;
+            border-bottom: 1px solid $white;
+            &:hover {
+                border-bottom: 1px solid $baseColor;
+            }
+        }
+        padding: 5px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+            color: $black;
+            font-weight: bold;
+            letter-spacing: 1px;
+            cursor: pointer;
+            &:hover ul {
+                height: 120px;
+                color: $baseColor;
+            }
+            &:hover ul li {
+                display: block;
+                width: 130px;
+                text-align: center;
+            }
+            ul {
+                border-top: 2px solid $baseColor;
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                padding: 0;
+                background-color: $white;
+                height: 0px;
+                transition: height 0.2s ease-in-out;
+                li {
+                    padding: 10px 0;
+                    display: none;
+                    &:hover {
+                        background-color: $baseColor;
+                        a {
+                            color: $white;
+                        }
+                    }
+                    a {
+                        color: $black;
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:800px){
+    .navigatie{
+        justify-content: space-between;
+        padding: 10px 10px;
+        .topRight{
+            display: none;
+       
+        }
+        .topRightMenu{
+            display: block;
+        }
+    }
+    .dropDown{
+        padding: 10px 10px;
+    }
+}

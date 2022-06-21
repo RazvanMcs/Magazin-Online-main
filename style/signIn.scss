@@ -1,0 +1,14 @@
+@import '../partials//generalCss';
+@import 'indexStyle';
+
+.container .subContainer .rightSide ul {
+    flex-direction: column;
+}
+
+.container {
+    .subContainer {
+        .rightSide {
+            width: 350px;
+        }
+    }
+}

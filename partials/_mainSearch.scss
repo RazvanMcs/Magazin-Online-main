@@ -1,0 +1,53 @@
+@import 'colors';
+@import 'fontSize';
+.search {
+    input {
+        width: 400px;
+        padding: 10px 10px;
+        margin-top: 80px;
+        //   border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: $black;
+        font-weight: bold;
+        text-align: center;
+        &::placeholder {
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-align: center;
+            color: $black;
+        }
+        &:focus {
+            background-color: $baseColor;
+            &::placeholder {
+                color: $white;
+            }
+            color: $white;
+        }
+    }
+    .searchBtn {
+        background-color: $white;
+        //   border-radius: 30px;
+        padding: 10px 40px;
+        font-weight: bold;
+        color: $black;
+        font-size: $h4;
+        letter-spacing: 2px;
+    }
+}
+@media (max-width:800px){
+    .search{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input{
+            width: 300px;
+        }
+        .searchBtn{
+
+            text-align: center;
+            width: 100px;
+            margin-top: 10px;
+            padding: 10px 20px;
+        }
+    }
+}

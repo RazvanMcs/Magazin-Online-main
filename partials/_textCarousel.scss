@@ -1,0 +1,23 @@
+@import 'fontSize';
+@import 'colors';
+.textCarousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    .title {
+        font-size: $h2;
+        margin-bottom: 20px;
+        letter-spacing: 5px;
+        background-color: $baseColor;
+        width: 100%;
+        text-align: center;
+    }
+    .subTitle {
+        background-color: $baseColor;
+        font-size: $h4;
+        border: 1px solid $white;
+        padding: 2px 20px;
+    }
+}
