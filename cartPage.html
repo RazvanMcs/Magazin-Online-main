@@ -1,26 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/style/cartPage.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/style/cartPage.css" />
+  </head>
+  <body>
     <header></header>
     <div id="backUp" class="search">
-        <input type="text" name="search" placeholder="Enter your searches" />
-        <a class="searchBtn" href="#">Search</a>
+      <input type="text" name="search" placeholder="Enter your searches" />
+      <a class="searchBtn" href="#">Search</a>
     </div>
     <div class="backUp">
-        <a href="#backUp"><img src="../images/up.png" alt="upArrow" title="Go up" /></a>
+      <a href="#backUp"
+        ><img src="../images/up.png" alt="upArrow" title="Go up"
+      /></a>
     </div>
     <main>
+      <aside class="left">
+        <form action="#" method="get">
+          <h2>Checkout</h2>
+          <p class="colored">Billing Details</p>
+          <div class="subContainerFormular">
+            <div>
+              <label for="user-name">Name *</label>
+              <input
+                type="text"
+                name="userName"
+                placeholder="Your full name"
+                id="user-name"
+                required
+              />
+            </div>
+            <div>
+              <label for="user-email">Email Adress *</label>
+              <input
+                type="email"
+                name="userEmail"
+                placeholder="Email"
+                id="user-email"
+                required
+              />
+            </div>
+            <div>
+              <label for="user-number">Phone Number *</label>
+              <input
+                type="tel"
+                name="userNumber"
+                placeholder="Phone number"
+                id="user-number"
+                required
+              />
+            </div>
+          </div>
+          <p class="colored">Shipping Info</p>
+          <div class="subContainerFormular">
+            <div>
+              <label for="adresa-utilizator">Adress *</label>
+              <input
+                type="text"
+                name="adresaUtilizator"
+                placeholder="Adress"
+                id="adresa-utilizator"
+                required
+              />
+            </div>
+            <div>
+              <label for="city-utilizator">City *</label>
+              <input
+                type="text"
+                name="cityUtilizator"
+                placeholder="City"
+                id="city-utilizator"
+                required
+              />
+            </div>
+            <div>
+              <label for="country-utilizator">Country *</label>
+              <input
+                type="text"
+                name="coutryUtilizator"
+                placeholder="Country"
+                id="country-utilizator"
+                required
+              />
+            </div>
+          </div>
+          <p class="colored">Payment Details</p>
+          <div class="subContainerFormular">
+            <div>
+              <label for="card">Card</label>
+              <input type="radio" name="payment" value="Card" id="card" required    />
+            </div>
+            <div>
+              <label for="cash">Cash</label>
+              <input type="radio" name="payment" value="Cash" id="cash" />
+            </div>
+          </div>
+
         
+      </aside>
+
+      <aside class="right">
+        <h2>Summary</h2>
+        <div class="containerProduse">
+            <div></div>
+            <div></div>
+        </div>
+      <div class="pret">
+        <div><p>Price:</p><p>1</p></div>
+        <div><p>Total</p><p>2</p></div>
+      </div>
+        <button type="submit">Submit & Continue</button>
+      </aside>
+    </form>
     </main>
     <footer></footer>
     <script src="/jsFiles/header-footer.js"></script>
-
-</body>
+  </body>
 </html>

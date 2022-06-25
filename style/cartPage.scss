@@ -4,4 +4,88 @@
 @import '../partials/search';
 @import '../partials/backUp';
 @import '../partials/fontSize';
-@import '../partials/colors';
+@import '../partials/colors';   
+
+main{
+    display: flex;
+    justify-content: center;
+    // border: 2px solid black;
+    .left{
+        margin: 50px 0 50px 20px;
+        // border: 2px solid $baseColor;
+        background-color: $lightShadow;
+        padding: 20px;
+      .subContainerFormular{
+        // border-bottom: 1px solid $darkShadow;
+        border-left: 3px solid $darkShadow;
+        max-width: 600px;
+        flex-wrap: wrap;
+        display: flex;
+        gap:40px;
+        padding: 10px;
+        
+        div{
+            display: flex;
+            flex-direction: column;
+            input{
+                &::placeholder{
+                    color:$darkShadow;
+                    // letter-spacing: 2px;
+                }
+                &:focus{
+                    background-color: $baseColor;
+                    &::placeholder{
+                        color: $white;
+                    }
+                }
+            }
+        }
+      }  
+      p{
+        margin: 30px 0;
+        color: $baseColor;
+        font-weight: bold;
+      }
+    }
+    .right{
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 50px 20px 50px 0;
+        padding: 20px;
+        background-color: $baseColorOpacity;
+        .containerProduse{
+            div{
+                margin-top:5px;
+                width: 100px;
+                height: 100px;
+                border: 2px solid black;
+            }
+
+        }
+    }
+}
+@media (max-width:800px){
+    main{
+        flex-direction: column;
+        .left{
+            margin-bottom: 0;
+            margin-right: 20px;
+        }
+        .right{
+            margin:0 20px 50px 20px;
+            p{
+                font-weight: bold;
+            }
+            .pret
+            {
+                margin:20px 0;
+                div{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
