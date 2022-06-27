@@ -253,7 +253,7 @@ p {
 .container .subContainer .rightSide .toSignIn {
   margin-top: 30px;
   color: #4eac4e;
-  padding-bottom: 3px;
+  border-bottom: 1px solid #e9e9e9;
 }
 
 .container .subContainer .rightSide .toSignIn:hover {
@@ -269,5 +269,10 @@ p {
 
 .container .subContainer .rightSide {
   width: 350px;
+}
+
+.errorBox {
+  color: red;
+  margin-top: 15px;
 }
 /*# sourceMappingURL=signIn.css.map */
