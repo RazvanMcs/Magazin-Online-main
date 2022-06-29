@@ -61,35 +61,15 @@ section {
                 transform: translate(3px, 0);
             }
         }
-        .slide1 {
-            border: 1px solid $black;
-            box-shadow: 6px 5px $shadow;
-            margin-right: 40px;
-            margin-left: 40px;
-            padding-bottom: 30px;
-            img {
-                width: 400px;
-                height: 300px;
-            }
-            p {
-                font-size: $h3;
-                margin: 10px 20px;
-            }
-            a {
-                margin: 10px 20px;
-                padding: 5px 40px;
-                border: 2px solid $black;
-                letter-spacing: 2px;
-            }
         }
-        .slide2 {
+        .slide {
             border: 1px solid $black;
             box-shadow: 6px 5px $shadow;
             margin-right: 40px;
             text-align: center;
             padding-bottom: 30px;
             img {
-                width: 200px;
+                width: 300px;
                 height: 300px;
             }
             p {
@@ -104,16 +84,19 @@ section {
             }
         }
     }
-}
+
 @media (max-width:900px){
     section{
  
    .carousel{
-         margin: 10px 0;
-         .slide1{
+         margin: 10px 100px;
+        //  display: flex;
+        //  flex-wrap: wrap;
+        //  flex-direction: column;
+         .hideSlide{
              display: none;
          }
-         .slide2{
+         .slide{
              margin-right:20px;
              margin-left: 20px;
              width: 30%;

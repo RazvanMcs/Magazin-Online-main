@@ -1,0 +1,17 @@
+{
+    "products": [
+      {
+        "productName": "Mustang1",
+        "imagineProdus": "../numere.jpg"
+      },
+      {
+        "productName": "Mustang2",
+        "imagineProdus": "../me.jpeg"
+      },
+      {
+        "productName": "Mustang3",
+        "imagineProdus": "../fireJPEG.jpg"
+      }
+    ]
+  }
+  

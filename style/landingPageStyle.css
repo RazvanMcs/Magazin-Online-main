@@ -341,33 +341,7 @@ section .carousel .arrow.b:hover {
           transform: translate(3px, 0);
 }
 
-section .carousel .slide1 {
-  border: 1px solid black;
-  -webkit-box-shadow: 6px 5px lightgray;
-          box-shadow: 6px 5px lightgray;
-  margin-right: 40px;
-  margin-left: 40px;
-  padding-bottom: 30px;
-}
-
-section .carousel .slide1 img {
-  width: 400px;
-  height: 300px;
-}
-
-section .carousel .slide1 p {
-  font-size: 17px;
-  margin: 10px 20px;
-}
-
-section .carousel .slide1 a {
-  margin: 10px 20px;
-  padding: 5px 40px;
-  border: 2px solid black;
-  letter-spacing: 2px;
-}
-
-section .carousel .slide2 {
+section .slide {
   border: 1px solid black;
   -webkit-box-shadow: 6px 5px lightgray;
           box-shadow: 6px 5px lightgray;
@@ -376,17 +350,17 @@ section .carousel .slide2 {
   padding-bottom: 30px;
 }
 
-section .carousel .slide2 img {
-  width: 200px;
+section .slide img {
+  width: 300px;
   height: 300px;
 }
 
-section .carousel .slide2 p {
+section .slide p {
   font-size: 17px;
   margin: 10px 20px;
 }
 
-section .carousel .slide2 a {
+section .slide a {
   margin: 10px 20px;
   padding: 5px 30px;
   border: 2px solid black;
@@ -395,22 +369,22 @@ section .carousel .slide2 a {
 
 @media (max-width: 900px) {
   section .carousel {
-    margin: 10px 0;
+    margin: 10px 100px;
   }
-  section .carousel .slide1 {
+  section .carousel .hideSlide {
     display: none;
   }
-  section .carousel .slide2 {
+  section .carousel .slide {
     margin-right: 20px;
     margin-left: 20px;
     width: 30%;
   }
-  section .carousel .slide2 img {
+  section .carousel .slide img {
     margin: 0;
     width: 100%;
     height: 200px;
   }
-  section .carousel .slide2 .clickable {
+  section .carousel .slide .clickable {
     margin: 2px;
     padding: 5px 10px;
   }
@@ -654,87 +628,6 @@ footer .footTitle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-section .carousel {
-  margin: 10px 100px;
-  height: 450px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-section .carousel .arrow img {
-  height: 40px;
-  width: 40px;
-}
-
-section .carousel .arrow.a:hover {
-  -webkit-transform: translate(-3px, 0);
-          transform: translate(-3px, 0);
-}
-
-section .carousel .arrow.b:hover {
-  -webkit-transform: translate(3px, 0);
-          transform: translate(3px, 0);
-}
-
-section .carousel .slide1 {
-  border: 1px solid black;
-  -webkit-box-shadow: 6px 5px lightgray;
-          box-shadow: 6px 5px lightgray;
-  margin-right: 40px;
-  margin-left: 40px;
-  padding-bottom: 30px;
-}
-
-section .carousel .slide1 img {
-  width: 400px;
-  height: 300px;
-}
-
-section .carousel .slide1 p {
-  font-size: 17px;
-  margin: 10px 20px;
-}
-
-section .carousel .slide1 a {
-  margin: 10px 20px;
-  padding: 5px 40px;
-  border: 2px solid black;
-  letter-spacing: 2px;
-}
-
-section .carousel .slide2 {
-  border: 1px solid black;
-  -webkit-box-shadow: 6px 5px lightgray;
-          box-shadow: 6px 5px lightgray;
-  margin-right: 40px;
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-section .carousel .slide2 img {
-  width: 200px;
-  height: 300px;
-}
-
-section .carousel .slide2 p {
-  font-size: 17px;
-  margin: 10px 20px;
-}
-
-section .carousel .slide2 a {
-  margin: 10px 20px;
-  padding: 5px 30px;
-  border: 2px solid black;
-  letter-spacing: 2px;
 }
 
 section .heroImage {
