@@ -1,99 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/landingPageStyle.css" />
     <title>Home</title>
-</head>
+  </head>
 
-<body>
-    <header>
-    </header>
+  <body>
+    <header></header>
     <!-- BACK UP BUTTON  -->
     <div class="backUp">
-        <a href="#backUp"><img src="../images/up.png" alt="upArrow" title="Go up" /></a>
+      <a href="#backUp"
+        ><img src="../images/up.png" alt="upArrow" title="Go up"
+      /></a>
     </div>
     <div class="heroImage">
-        <div class="container">
-            <a class="discover" href="#">DISCOVER THE NEW MUSTANG</a>
-            <a class="learn clickable" href="#">LEARN MORE</a>
-            <div class="search">
-                <input type="search" name="search" placeholder="Enter your searches" />
-                <a class="searchBtn" href="#">Search</a>
-            </div>
+      <div class="container">
+        <a class="discover">DISCOVER THE NEW MUSTANG</a>
+        <a class="learn clickable" href="#">LEARN MORE</a>
+        <div class="search">
+          <input
+            class="landingSearch"
+            type="search"
+            name="search"
+            placeholder="Enter your searches"
+          />
+          <a class="searchBtn" href="http://127.0.0.1:5501/productsOverview.html">Search</a>
         </div>
+      </div>
     </div>
+    <section class="containerCarusel1"></section>
     <section>
-        <div class="textCarousel">
-            <p class="title">FORD-SINCE 1903</p>
-            <p class="subTitle">HAVE A LOOK</p>
-        </div>
-        <div class="carousel">
-            <div class="arrow a">
-                <a href="#"><img src="../images/back.png" alt="go back" /></a>
-            </div>
-            <div class="slide 1">
-                <img class="carulesImg" alt="car pic" />
-                <p class="numeProdus"></p>
-                <a class="clickable" href="#">More</a>
-            </div>
-            <div class="slide 2 hideSlide">
-                <img class="carulesImg" alt="car pic" />
-                <p class="numeProdus"></p>
-                <a class="clickable" href="#">More</a>
-            </div>
-            <div class="slide 3 hideSlide">
-                <img class="carulesImg" alt="car pic" />
-                <p class="numeProdus"></p>
-                <a class="clickable" href="#">More</a>
-            </div>
-            <div class="arrow b">
-                <a href="# "><img src="../images/next.png" alt="go next" /></a>
-            </div>
-        </div>
+      <div class="heroImage product">
+        <a class="discover">Experience the new Mazda</a>
+        <a class="learn clickable" href="#">LEARN MORE</a>
+      </div>
     </section>
-    <section>
-        <div class="heroImage product">
-            <a class="discover" href="#">Experience the new Mazda</a>
-            <a class="learn clickable" href="#">LEARN MORE</a>
-        </div>
-    </section>
-    <section>
-        <div class="textCarousel">
-            <p class="title">MAZDA COLECTION</p>
-            <p class="subTitle">HAVE A LOOK</p>
-        </div>
-        <div class="carousel">
-            <div class="arrow a">
-                <a href="#"><img src="../images/back.png" alt="go back" /></a>
-            </div>
-            <div class="slide 1">
-                <img src="../images/carPic.jpg" alt="car pic" />
-                <p>Ford Mustang</p>
-                <a class="clickable" href="#">More</a>
-            </div>
-            <div class="slide 2 hideSlide">
-                <img src="../images/carPic.jpg" alt="car pic" />
-                <p>Ford Mondeo</p>
-                <a class="clickable" href="#">More</a>
-            </div>
-            <div class="slide 3 hideSlide">
-                <img src="../images/carPic.jpg" alt="car pic" />
-                <p>Ford Ranger</p>
-                <a class="clickable" href="#">More</a>
-            </div>
-            <div class="arrow b">
-                <a href="# "><img src="../images/next.png" alt="go next" /></a>
-            </div>
-        </div>
-    </section>
-    <footer>
-       
-    </footer>
+    <section class="containerCarusel2"></section>
+    <footer></footer>
     <script src="/jsFiles/header-footer.js"></script>
-</body>
-
+    <script src="/jsFiles/carusel.js"></script>
+    <script src="/jsFiles/landingPageSearch.js"></script>
+  </body>
 </html>

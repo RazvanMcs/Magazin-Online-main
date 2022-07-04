@@ -313,22 +313,23 @@ p {
 }
 
 section .carousel {
-  margin: 10px 100px;
-  height: 450px;
+  margin: 10px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-section .carousel .arrow img {
-  height: 40px;
-  width: 40px;
+section .carousel .arrow {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
 }
 
 section .carousel .arrow.a:hover {
@@ -341,51 +342,61 @@ section .carousel .arrow.b:hover {
           transform: translate(3px, 0);
 }
 
+section .carousel .arrow img {
+  width: 30px;
+}
+
 section .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border: 1px solid black;
   -webkit-box-shadow: 6px 5px lightgray;
           box-shadow: 6px 5px lightgray;
-  margin-right: 40px;
+  margin: 10px 100px;
   text-align: center;
-  padding-bottom: 30px;
-}
-
-section .slide img {
-  width: 300px;
-  height: 300px;
+  width: 800px;
+  height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(105, 25, 25, 0.5);
+  overflow: hidden;
 }
 
 section .slide p {
-  font-size: 17px;
-  margin: 10px 20px;
+  font-size: 20px;
+  padding: 5px;
+  color: black;
+  background-color: #e9e9e9;
 }
 
 section .slide a {
-  margin: 10px 20px;
+  margin: 0px 0px;
   padding: 5px 30px;
-  border: 2px solid black;
   letter-spacing: 2px;
+  background-color: #e9e9e9;
+  letter-spacing: 6px;
 }
 
 @media (max-width: 900px) {
   section .carousel {
-    margin: 10px 100px;
-  }
-  section .carousel .hideSlide {
-    display: none;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   section .carousel .slide {
-    margin-right: 20px;
-    margin-left: 20px;
-    width: 30%;
-  }
-  section .carousel .slide img {
-    margin: 0;
-    width: 100%;
-    height: 200px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
   section .carousel .slide .clickable {
-    margin: 2px;
     padding: 5px 10px;
   }
 }
@@ -659,31 +670,5 @@ section .heroImage.product {
 .clickable:hover {
   background-color: #691919;
   color: white;
-}
-
-@media (max-width: 900px) {
-  section .carousel {
-    margin: 10px 0;
-  }
-  section .carousel .slide1 {
-    display: none;
-  }
-  section .carousel .slide2 {
-    margin-right: 20px;
-    margin-left: 20px;
-    width: 30%;
-  }
-  section .carousel .slide2 img {
-    margin: 0;
-    width: 100%;
-    height: 200px;
-  }
-  section .carousel .slide2 .clickable {
-    margin: 2px;
-    padding: 5px 10px;
-  }
-  section .heroImage {
-    height: 350px;
-  }
 }
 /*# sourceMappingURL=landingPageStyle.css.map */

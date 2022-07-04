@@ -1,116 +1,77 @@
-@import 'colors';
-@import 'fontSize';
-// section {
-//     .secondCarousel {
-//         margin: 20px 100px;
-//         text-align: center;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         .arrow {
-//             img {
-//                 height: 40px;
-//                 width: 40px;
-//             }
-//             &.a:hover {
-//                 transform: translate(-3px, 0);
-//             }
-//             &.b:hover {
-//                 transform: translate(3px, 0);
-//             }
-//         }
-//         .slide {
-//             box-shadow: 6px 5px $baseColorOpacity;
-//             padding-bottom: 20px;
-//             margin-right: 20px;
-//             border: 1px solid $black;
-//             img {
-//                 margin: 10px;
-//                 width: 200px;
-//                 height: 250px;
-//             }
-//             p {
-//                 font-size: $h3;
-//                 margin: 10px 20px;
-//             }
-//             a {
-//                 margin: 10px 20px;
-//                 padding: 5px 20px;
-//                 border: 2px solid $black;
-//                 letter-spacing: 2px;
-//             }
-//         }
-//     }
-// }
+@import "colors";
+@import "fontSize";
 section {
-    .carousel {
-        margin: 10px 100px;
-        height: 450px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .arrow {
-            img {
-                height: 40px;
-                width: 40px;
-            }
-            &.a:hover {
-                transform: translate(-3px, 0);
-            }
-            &.b:hover {
-                transform: translate(3px, 0);
-            }
-        }
-        }
-        .slide {
-            border: 1px solid $black;
-            box-shadow: 6px 5px $shadow;
-            margin-right: 40px;
-            text-align: center;
-            padding-bottom: 30px;
-            img {
-                width: 300px;
-                height: 300px;
-            }
-            p {
-                font-size: $h3;
-                margin: 10px 20px;
-            }
-            a {
-                margin: 10px 20px;
-                padding: 5px 30px;
-                border: 2px solid $black;
-                letter-spacing: 2px;
-            }
-        }
-    }
+  .carousel {
+    margin: 10px 10px;
+    // height: 450px;
+    display: flex;
+    justify-content: space-evenly;
 
-@media (max-width:900px){
-    section{
- 
-   .carousel{
-         margin: 10px 100px;
-        //  display: flex;
-        //  flex-wrap: wrap;
-        //  flex-direction: column;
-         .hideSlide{
-             display: none;
-         }
-         .slide{
-             margin-right:20px;
-             margin-left: 20px;
-             width: 30%;
-             img{
-                 margin: 0;
-                 width: 100%;
-                 height: 200px;
-             }
-             .clickable{
-                 margin:2px;
-                 padding: 5px 10px;
-             }
-         }
-      
-     }
+    align-items: center;
+    .arrow {
+      background-color: white;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      &.a:hover {
+        transform: translate(-3px, 0);
+      }
+      &.b:hover {
+        transform: translate(3px, 0);
+      }
+      img {
+        width: 30px;
+      }
     }
+  }
+  .slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid $black;
+    box-shadow: 6px 5px $shadow;
+    margin: 10px 100px;
+    text-align: center;
+    // padding-bottom: 30px;
+    width: 800px;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $baseColorOpacity;
+    // clip:rect(100px 100px 100px 0);
+    // vertical-align: middle  ;
+    overflow: hidden;
+    p {
+      font-size: $h2;
+      // margin: 0px 0px;
+      padding: 5px;
+      color: $black;
+      background-color: $lightShadow;
+    }
+    a {
+      margin: 0px 0px;
+      padding: 5px 30px;
+      // border: 2px solid $black;
+      letter-spacing: 2px;
+      background-color: $lightShadow;
+      letter-spacing: 6px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  section {
+    .carousel {
+      justify-content: space-between;
+      .slide {
+        margin-right: 10px;
+        margin-left: 10px;
+        
+        .clickable {
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
 }

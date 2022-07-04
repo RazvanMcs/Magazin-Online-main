@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "js": "^0.1.0",
+    "yarn": "^1.22.19"
+  },
+  
+  "type": "module"
+
+}

@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/productPage.css" />
     <title>Product Page</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- NAVIGATIE  -->
-    <header>
-    </header>
+    <header></header>
     <!-- SEARCH BAR -->
     <div id="backUp" class="search">
-        <input type="text" name="search" placeholder="Enter your searches" />
-        <a class="searchBtn" href="#">Search</a>
+      <input
+        class="searchBar"
+        type="text"
+        name="search"
+        placeholder="Enter your searches"
+      />
+      <a class="searchBtn" href="#">Search</a>
     </div>
     <!-- BACK UP BUTTON  -->
     <div class="backUp">
-        <a href="#backUp"><img src="../images/up.png" alt="upArrow" title="Go up" /></a>
+      <a href="#backUp"
+        ><img src="../images/up.png" alt="upArrow" title="Go up"
+      /></a>
     </div>
     <!-- ASIDE  -->
     <div class="containerProduct">
-        <aside class="leftProduct">
-            <div class="bigImg">
-                <img src="../images/carPic.jpg" alt="car" />
-            </div>
-            <div class="smallImg">
-                <img src="../images/carPic.jpg" alt="car" />
-                <img src="../images/carPic.jpg" alt="car " />
-                <img src="../images/carPic.jpg" alt="car" />
-                <img src="../images/carPic.jpg" alt="car" />
-            </div>
-            <!-- DETAILS 
+      <aside class="leftProduct">
+        <div class="bigImg"></div>
+        <div class="smallImg"></div>
+        <!-- DETAILS 
             <div class="detailsProduct">
                 <p class="text" id="details">Details</p>
                 <p class="text">some text</p>
@@ -59,58 +57,36 @@
                     <li>2</li>
                 </ul>
             </div> -->
-        </aside>
-        <aside class="rightProduct">
-            <p class="title">Nume Produs</p>
-            <div>
-                <p class="price">Price</p>
-                <input type="number" max="10" min="1" value="1" />
-            </div>
-            <a class="cart" href="#">ADD TO MY CART</a>
-            <a class="aLinked" href="#details" title="Go to details">Details</a>
-            <a class="aLinked" href="#infoStats" title="Go to Info & Stats">Info & Stats</a
+      </aside>
+      <aside class="rightProduct">
+        <p class="titleProduct"></p>
+        <div>
+          <p class="price"></p>
+          <input type="number" max="10" min="1" value="1" />
+        </div>
+        <a class="cart" href="#">ADD TO MY CART</a>
+        <a class="aLinked" href="#details" title="Go to details">Details</a>
+        <a class="aLinked" href="#infoStats" title="Go to Info & Stats"
+          >Info & Stats</a
         >
       </aside>
     </div>
-
+    <div id="details"></div>
+    <table id="infoStats">
+      <!-- <tr>
+        <th>1</th>
+        <td>12</td>
+      </tr> -->
+    </table>
     <!-- CAROUSEL -->
 
-    <section>
-      <div class="textCarousel">
-        <p class="title">Section Title</p>
-        <p class="subTitle">Sectio Sub Title</p>
-      </div>
-      <div class="carousel">
-        <div class="arrow a">
-            <a href="#"><img src="../images/back.png" alt="go back" /></a>
-        </div>
-        <div class="slide1">
-            <img src="../images/carPic.jpg" alt="car pic" />
-            <p>Ford Mustang</p>
-            <a class="clickable" href="#">More</a>
-        </div>
-        <div class="slide2">
-            <img src="../images/carPic.jpg" alt="car pic" />
-            <p>Ford Mondeo</p>
-            <a class="clickable" href="#">More</a>
-        </div>
-        <div class="slide2">
-            <img src="../images/carPic.jpg" alt="car pic" />
-            <p>Ford Ranger</p>
-            <a class="clickable" href="#">More</a>
-        </div>
-        <div class="arrow b">
-            <a href="# "><img src="../images/next.png" alt="go next" /></a>
-        </div>
-    </div>
-    </section>
+    <section class="containerCarusel1"></section>
     <!-- FOOTER  -->
 
-    <footer>
-        
-    </footer>
+    <footer></footer>
     <script src="/jsFiles/header-footer.js"></script>
-    
-</body>
-
+    <script src="/jsFiles/landingPageSearch.js"></script>
+    <script src="/jsFiles/caruselProductPage.js"></script>
+    <script src="/jsFiles/productPage.js"></script>
+  </body>
 </html>

@@ -1,248 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/productsOverviewStyle.css" />
     <title>Products</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- NAVIGATIE  -->
-    <header>
-    </header>
+    <header></header>
     <!-- SEARCH BAR -->
     <div class="search">
-        <input type="search" name="search" placeholder="Enter your searches" />
-        <a class="searchBtn" href="#">Search</a>
+      <input
+        class="searchField"
+        type="search"
+        name="search"
+        placeholder="Enter your searches"
+      />
+      <a class="searchBtn" href="#">Search</a>
     </div>
     <!-- BACK UP BUTTON  -->
     <div class="backUp">
-        <a href="#backUp"><img src="../images/up.png" alt="upArrow" title="Go up" /></a>
+      <a href="#backUp"
+        ><img src="../images/up.png" alt="upArrow" title="Go up"
+      /></a>
     </div>
     <!-- MAIN CONTENT -->
     <div class="container">
-        <!-- LEFT SIDE -->
-        <aside class="left">
-            <form action="/productsOverview.html">
-                <ul>
-                    <li class="filter"><b>Your Filters:</b></li>
-                    <li class="criteriu">
-                        <b>Brand</b>
-                        <ul>
-                            <li class="numeCriteriu">
-                                <input type="checkbox" name="brand" id="Ford" value="ford" /><label for="Ford">Ford</label>
-                            </li>
-                            <li class="numeCriteriu">
-                                <input type="checkbox" name="brand" id="Mazda" value="mazda" /><label for="Mazda">Mazda</label>
-                            </li>
-                            <li class="numeCriteriu">
-                                <input type="checkbox" name="brand" id="Dacia" value="dacia" /><label for="Dacia">Dacia</label>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="criteriu">
-                        <b>Model</b>
-                        <ul>
-                            <li class="forFord">
-                                <ul>
-                                    <li class="model">
-                                        <input type="checkbox" name="model" id="mustang" value="mustang" /><label for="mustang">Mustang</label>
-                                    </li>
-                                    <li class="model">
-                                        <input type="checkbox" name="model" id="mondeo" value="mondeo" /><label for="mondeo">Mondeo</label>
-                                    </li>
-                                    <li class="model">
-                                        <input type="checkbox" name="model" id="ranger" value="Ranger" /><label for="ranger">Ranger</label>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="forMazda">
-                                <ul>
-                                    <li class="model">
-                                        <input type="checkbox" name="model" id="sase" value="sase" /><label for="sase">6</label>
-                                    </li>
-                                    <li class="model">
-                                        <input type="checkbox" name="model" id="bt50" value="BT50" /><label for="bt50">BT-50</label>
-                                    </li>
-                                    <li class="model">
-                                        <input type="checkbox" name="model" id="cx5" value="cx5" /><label for="cx5">CX-5</label>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="forDacia">
-                                <ul>
-                                    <li class="model">
-                                        <input type="checkbox" name="model" id="logan" value="logan" /><label for="logan">Logan</label>
-                                    </li>
-                                    <li class="model">
-                                        <input type="checkbox" name="model" id="stepWay" value="stepWay" /><label for="stepWay">StepWay</label>
-                                    </li>
-                                    <li class="model">
-                                        <input type="checkbox" name="model" id="duster" value="duster" /><label for="duster">Duster</label>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="criteriu"><b>Price Range</b></li>
-                </ul>
-            </form>
-        </aside>
-        <!-- RIGHT SIDE -->
-        <aside class="right">
-            <h1>
-                Browsing products for (type of search) - (number of searches) results
-            </h1>
+      <!-- LEFT SIDE -->
+      <aside class="left">
+        <div class="containerFiltru">
+          <div class="brands">
+            <b class="yourFilter">Your Filters:</b>
+            <label for="brandNameDacia"
+              >Dacia
+              <input
+                type="checkbox"
+                value="Dacia"
+                name="brand"
+                id="brandNameDacia"
+              />
+            </label>
+            <label for="brandNameFord"
+              >Ford
+              <input
+                type="checkbox"
+                value="Ford"
+                name="brand"
+                id="brandNameFord"
+              />
+            </label>
+            <label for="brandNameMazda"
+              >Mazda
+              <input
+                type="checkbox"
+                value="Mazda"
+                name="brand"
+                id="brandNameMazda"
+              />
+            </label>
+          </div>
+          <div class="models"></div>
+        </div>
+      </aside>
+      <!-- RIGHT SIDE -->
+      <aside class="right">
+        <!-- FILTERS -->
 
-            <!-- FILTERS -->
+        <label for="sort">Sort by price:</label>
+        <button class="asc">Low->High</button>
+        <button class="desc">High->Low</button>
 
-            <label for="sort">Sort by:</label>
-            <select id="sort" name="sortBy">
-          <option value="highToLow">High To Low</option>
-          <option value="lowToHigh">Low to High</option>
-        </select>
-
-            <label for="showNitems">Results per page</label>
-            <select id="showNitems" name="numberOfItems">
-          <option value="25">25</option>
-          <option value="15">15</option>
-          <option value="10">10</option>
-        </select>
-
-            <!-- PRODUCT LIST -->
-
-            <!-- <div class="gridProductPage">
-                <div>
-                    <img src="../images/carPic.jpg" alt="carPic" />
-                    <p class="text">Some text</p>
-                    <p class="price">The Price</p>
-                    <div class="hoverItems">
-                        <a href="/productPage.html">VIEW DETAILS</a>
-                        <a href="# ">ADD TO CHART</a>
-                    </div>
-                </div>
-                <div>
-                    <img src="../images/carPic.jpg" alt="carPic" />
-                    <p class="text">Some text</p>
-                    <p class="price">The Price</p>
-                    <div class="hoverItems">
-                        <a href="/productPage.html">VIEW DETAILS</a>
-                        <a href="# ">ADD TO CHART</a>
-                    </div>
-                </div>
-                <div>
-                    <img src="../images/carPic.jpg" alt="carPic" />
-                    <p class="text">Some text</p>
-                    <p class="price">The Price</p>
-                    <div class="hoverItems">
-                        <a href="/productPage.html">VIEW DETAILS</a>
-                        <a href="#">ADD TO CHART</a>
-                    </div>
-                </div>
-                <div>
-                    <img src="../images/carPic.jpg" alt="carPic" />
-                    <p class="text">Some text</p>
-                    <p class="price">The Price</p>
-                    <div class="hoverItems">
-                        <a href="/productPage.html">VIEW DETAILS</a>
-                        <a href="#">ADD TO CHART</a>
-                    </div>
-                </div>
-                <div>
-                    <img src="../images/carPic.jpg" alt="carPic" />
-                    <p class="text">Some text</p>
-                    <p class="price">The Price</p>
-                    <div class="hoverItems">
-                        <a href="/productPage.html">VIEW DETAILS</a>
-                        <a href="#">ADD TO CHART</a>
-                    </div>
-                </div>
-                <div>
-                    <img src="../images/carPic.jpg" alt="carPic" />
-                    <p class="text">Some text</p>
-                    <p class="price">The Price</p>
-                    <div class="hoverItems">
-                        <a href="/productPage.html">VIEW DETAILS</a>
-                        <a href="#">ADD TO CHART</a>
-                    </div>
-                </div>
-                <div>
-                    <img src="../images/carPic.jpg" alt="carPic" />
-                    <p class="text">Some text</p>
-                    <p class="price">The Price</p>
-                    <div class="hoverItems">
-                        <a href="/productPage.html">VIEW DETAILS</a>
-                        <a href="#">ADD TO CHART</a>
-                    </div>
-                </div>
-                <div>
-                    <img src="../images/carPic.jpg" alt="carPic" />
-                    <p class="text">Some text</p>
-                    <p class="price">The Price</p>
-                    <div class="hoverItems">
-                        <a href="/productPage.html">VIEW DETAILS</a>
-                        <a href="#">ADD TO CHART</a>
-                    </div>
-                </div>
-                <div>
-                    <img src="../images/carPic.jpg" alt="carPic" />
-                    <p class="text">Some text</p>
-                    <p class="price">The Price</p>
-                    <div class="hoverItems">
-                        <a href="/productPage.html">VIEW DETAILS</a>
-                        <a href="#">ADD TO CHART</a>
-                    </div>
-                </div>
-                <div>
-                    <img src="../images/carPic.jpg" alt="carPic" />
-                    <p class="text">Some text</p>
-                    <p class="price">The Price</p>
-                    <div class="hoverItems">
-                        <a href="/productPage.html">VIEW DETAILS</a>
-                        <a href="#">ADD TO CHART</a>
-                    </div>
-                </div>
-                <div>
-                    <img src="../images/carPic.jpg" alt="carPic" />
-                    <p class="text">Some text</p>
-                    <p class="price">The Price</p>
-                    <div class="hoverItems">
-                        <a href="/productPage.html">VIEW DETAILS</a>
-                        <a href="#">ADD TO CHART</a>
-                    </div>
-                </div>
-                <div>
-                    <img src="../images/carPic.jpg" alt="carPic" />
-                    <p class="text">Some text</p>
-                    <p class="price">The Price</p>
-                    <div class="hoverItems">
-                        <a href="/productPage.html">VIEW DETAILS</a>
-                        <a href="#">ADD TO CHART</a>
-                    </div>
-                </div>
-            </div> -->
-        </aside>
-    </div>
-    <div class="pagination">
-        <a href="# ">&laquo;</a>
-        <a href="# ">1</a>
-        <a href="# ">2</a>
-        <a href="# ">3</a>
-        <a href="# ">4</a>
-        <a href="# ">5</a>
-        <a href="# ">6</a>
-        <a href="# ">&raquo;</a>
+        <!-- PRODUCT LIST -->
+        <div class="productsListing"></div>
+      </aside>
     </div>
 
     <!-- FOOTER  -->
-
-    <footer>
-    </footer>
+    <footer></footer>
     <script src="/jsFiles/header-footer.js"></script>
-
-</body>
-
+    <script src="/jsFiles/landingPageSearch.js"></script>
+    <script src="/jsFiles/productOverView.js"></script>
+  </body>
 </html>
